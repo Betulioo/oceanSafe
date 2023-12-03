@@ -62,6 +62,7 @@ let oceanCards = [
 ];
 
 let gridDiv$$ = document.querySelector(".b-grid");
+let main$$ = document.querySelector("main");
 // we concat the array to duplicate it
 let totalOceanCards = oceanCards.concat(oceanCards);
 //create an array cardsPicked to save the cards picked

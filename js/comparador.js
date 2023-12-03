@@ -23,13 +23,18 @@ if (firstCard.id !== secondCard.id){
     //here goes the counter function
     contador()
 }else {
-
+setTimeout(()=>{
     cardsMatched.push(cardsPicked[0]);
-    cardsMatched.push(cardsPicked[1]);
     firstCardDiv$$[0].classList.remove("selected");
     firstCardDiv$$[1].classList.remove("selected");
+    firstCardDiv$$[0].hidden = true;
+    firstCardDiv$$[1].hidden = true;
     cardsPicked=[];
+    asideCards(cardsMatched);
     scorePlay();
+
+},700)
+
 }
     // console.log(cardsPicked);
 
