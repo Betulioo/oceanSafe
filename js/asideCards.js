@@ -1,8 +1,10 @@
 const asideCards = (MatchedCards) => {
+let cardssDiv$$ = document.querySelector('[data-function="cardsReady"]')
   let singlesCard = [];
   let cardMain$$ = document.createElement('div');
   cardMain$$.innerHTML = "";
-  main$$.appendChild(cardMain$$);
+  cardssDiv$$.appendChild(cardMain$$);
+  main$$.appendChild(cardssDiv$$)
 
 
   if (

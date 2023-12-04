@@ -5,6 +5,14 @@
   --hotpink: #b79cf5;
   --orange: rgb(54, 33, 242);
   --gradient: linear-gradient(60deg, var(--orange), var(--hotpink));
+  --color-primary: #18181A;
+  --color-secondary: #75757C;
+  --color-dark: #364C62;
+  --color-light: #F5F5F5;
+  --font-family-primary: "Roboto Mono", monospace;
+  --font-family-secondary: "Rubik Mono One", sans-serif;
+  --td: 150ms;
+  --te: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 body {
@@ -20,9 +28,18 @@ body {
   flex-direction: column;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .tableDiv {
   display: flex;
   flex-wrap: wrap;
+}
+
+.cardsReady {
+  display: flex;
 }
 
 main {
@@ -103,5 +120,34 @@ main {
 
 .card.descubierta {
   transform: rotateY(-180deg);
-}/*# sourceMappingURL=style.css.map */
+}
 
+.navbar {
+  background-color: rgba(227, 237, 248, 0.754);
+  color: #E1522D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.nav-section {
+  text-align: center;
+}
+
+.nav-section h3 {
+  margin: 0;
+}
+
+/* Add more styling as needed */
+.spanAttempts {
+  color: red; /* Example: Style attempts differently */
+}
+
+/* Media query for responsive design if needed */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

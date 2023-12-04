@@ -21,7 +21,7 @@ if(cardWon){
 
 } 
     if(cardsPicked.length===2){
-        setTimeout(compareCards(),500);
+        setTimeout(compareCards(),50);
         }
   
   }  

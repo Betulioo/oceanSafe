@@ -6,9 +6,16 @@ body {
 
    
   }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
   
 .tableDiv {
     display: flex;
     flex-wrap: wrap;
 }
 
+.cardsReady{
+  display: flex;
+}

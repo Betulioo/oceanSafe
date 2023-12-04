@@ -1,0 +1,30 @@
+.navbar {
+    background-color: rgba(227, 237, 248, 0.754);
+    color: #E1522D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+  }
+  
+  .nav-section {
+    text-align: center;
+  }
+  
+  .nav-section h3 {
+    margin: 0;
+  }
+  
+  /* Add more styling as needed */
+  
+  .spanAttempts {
+    color: red; /* Example: Style attempts differently */
+  }
+  
+  /* Media query for responsive design if needed */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+  }

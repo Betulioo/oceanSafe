@@ -1,4 +1,3 @@
-
 // this function compare the selected cards and compared it
 const compareCards = () => {
 const firstCardDiv$$ = document.querySelectorAll('.selected');
@@ -33,7 +32,7 @@ setTimeout(()=>{
     asideCards(cardsMatched);
     scorePlay();
 
-},700)
+},900)
 
 }
     // console.log(cardsPicked);
