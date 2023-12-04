@@ -1,6 +1,5 @@
 const chronometer = () =>{
-let minutos = 0;
-let segundos = 0;
+
 
 
     let chronoDiv$$ = document.querySelector('[data-function="chronometer"]');
@@ -17,11 +16,10 @@ let segundos = 0;
             segundos =0;
             chronoDiv$$.textContent=`0${minutos}:0${segundos}`;
     
-        }
-    
+        } 
 
-    } 
+    }    
+
         },1000);
  
     }
-chronometer();

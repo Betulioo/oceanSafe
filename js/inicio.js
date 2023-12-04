@@ -31,6 +31,21 @@ const createTable = (cardArray) => {
 
     const onInit = () => {
         createTable(totalOceanCards);
+        chronometer();
+        anime({
+          targets: 'div',
+          translateX: 250,
+          rotate: '1turn',
+          backgroundColor: '#FFF',
+          duration: 800
+        });
+        setInterval(()=>{
+          if (score===6){
+            endGame();
+            clearInterval();
+        }
+        })
+
       };
       
       onInit();
